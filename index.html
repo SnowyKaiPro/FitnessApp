@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site</title>
-    <link rel="stylesheet" href ="css.css">
+    <title>Fitness App</title>
+    <link rel="stylesheet" href="css.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
@@ -12,17 +12,24 @@
         <a href="#" class="logo">Fitness App</a>
 
         <nav class="navbar">
-            <a href="#" class = "active">Home</a>
-            <a href="App.zip" download="App.zip" style="--i:1;">Download</a>
-            <a href="aboutus.html" style="--i:3;">About Us</a>
-            <a href="contactus.html" style="--i:4;">Contact</a>
+            <a href="#" class="active">Home</a>
+            <a href="App.zip" download="App.zip">Download</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="contactus.html">Contact</a>
         </nav>
+
         <div class="social-media">
-            <a href="https://www.youtube.com/@fitnessappceoofficial" style="--i:1;"><i class='bx bxl-youtube'></i></a>
-            <a href="https://discord.gg/cJBD5Ukh" style="--i:2;"><i class='bx bxl-discord-alt'></i></a>
-            <a href="App.zip" download="App.zip" style="--i:3;"><i class='bx bxl-windows' ></i></a>
+            <a href="https://www.youtube.com/@fitnessappceoofficial"><i class='bx bxl-youtube'></i></a>
+            <a href="https://discord.gg/cJBD5Ukh"><i class='bx bxl-discord-alt'></i></a>
+            <a href="App.zip" download="App.zip"><i class='bx bxl-windows' ></i></a>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
         </div>
     </header>
+
     <section class="home">
         <div class="home-content">
             <h1>Fitness App</h1>
@@ -31,17 +38,37 @@
             <a href="App.zip" download="App.zip" class="btn">Download</a>
         </div>
         <div class="home-img">
-            <div class="rhombus">
-               
-            </div>
+            <div class="rhombus"></div>
         </div>
-        <div class="rhombus2">
-
+        <div class="rhombus2"></div>
+    </section>
+    
+    <!-- Advantages Section -->
+    <section class="advantages">
+        <h2>App Advantages</h2>
+        <div class="advantages-container">
+            <div class="advantage">
+                <i class='bx bx-heart'></i>
+                <h3>Personalized Workouts</h3>
+                <p>We tailor workouts to your goals and fitness level.</p>
+            </div>
+            <div class="advantage">
+                <i class='bx bx-chart'></i>
+                <h3>Progress Tracking</h3>
+                <p>Monitor your progress and achieve new results.</p>
+            </div>
+            <div class="advantage">
+                <i class='bx bx-devices'></i>
+                <h3>User-Friendly Interface</h3>
+                <p>Easily find the features you need and enjoy ease of use.</p>
+            </div>
         </div>
     </section>
 
-  
-    
-   
+    <script>
+        document.querySelector('.burger').addEventListener('click', function(){
+            document.querySelector('.navbar').classList.toggle('active');
+        })
+    </script>
 </body>
 </html>
