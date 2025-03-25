@@ -9,8 +9,8 @@
 }
 
 body {
-    background: #f5f5f5; /* Светло-серый фон */
-    color: #333; /* Темно-серый текст */
+    background: #f5f5f5;
+    color: #333;
     line-height: 1.6;
     overflow-x: hidden;
 }
@@ -22,12 +22,12 @@ a {
 .btn {
     display: inline-block;
     padding: 12px 30px;
-    background: #3498db; /* Синий цвет */
+    background: #3498db;
     border: 2px solid #3498db;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
     font-size: 18px;
-    color: #fff; /* Белый текст */
+    color: #fff;
     letter-spacing: 1px;
     font-weight: 600;
     transition: .5s;
@@ -45,7 +45,7 @@ a {
     left: 0;
     width: 100%;
     padding: 20px 5%;
-    background: #fff; /* Белый фон */
+    background: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between;
@@ -104,6 +104,11 @@ a {
     font-size: 24px;
     color: #777;
     transform: rotate(-45deg);
+}
+
+/* Burger Menu */
+.burger {
+    display: none;
 }
 
 /* Home Section */
@@ -206,11 +211,6 @@ a {
     color: #555;
 }
 
-/* Burger Menu */
-.burger {
-    display: none;
-}
-
 /* Mobile Styles */
 @media (max-width: 768px) {
     .header {
@@ -266,18 +266,24 @@ a {
 
     .home-content {
         max-width: 100%;
+        padding: 20px; /* Add padding for better spacing */
+        background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background */
+        border-radius: 10px; /* Add rounded corners */
     }
 
     .home-content h1 {
         font-size: 45px;
+        color: #333; /* Darken the text color */
     }
 
     .home-content h3 {
         font-size: 35px;
+        color: #3498db;
     }
 
     .home-content p {
         font-size: 17px;
+        color: #555; /* Darken the text color */
     }
 
     .home-img {
