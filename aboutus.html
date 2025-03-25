@@ -3,23 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href ="aboutus.css">
-    <title>Document</title>
+    <title>About Us - Fitness App</title>
+    <link rel="stylesheet" href="aboutus.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <div class="row">
-        <div class="imgWrapper">
-            <img src="image.png" alt="">
-        </div>
-        <div class="contentWrapper">
-            <div class="content">
-                <h2>About Us</h2>
-                <p>We are the development team that created the Fitnessapp. Our goal is to contribute to a healthier and more active lifestyle. We believe that fitness is not only about physical well—being, but also a path to personal growth and overall improvement.
+    <header class="header">
+        <a href="index.html" class="logo">Fitness App</a>
 
-                </p>
-                <a href="index.html">Home</a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="App.zip" download="App.zip">Download</a>
+            <a href="#" class="active">About Us</a>
+            <a href="contactus.html">Contact</a>
+        </nav>
+
+        <div class="social-media">
+            <a href="https://www.youtube.com/@fitnessappceoofficial"><i class='bx bxl-youtube'></i></a>
+            <a href="https://discord.gg/cJBD5Ukh"><i class='bx bxl-discord-alt'></i></a>
+            <a href="App.zip" download="App.zip"><i class='bx bxl-windows' ></i></a>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </header>
+
+    <section class="about-us">
+        <div class="about-container">
+            <div class="about-content">
+                <h1>About Us</h1>
+                <p>Welcome to Fitness App! We are a passionate team dedicated to helping you achieve your fitness and wellness goals.</p>
+                <p>Our mission is to provide innovative and user-friendly tools that empower you to live a healthier and happier life. We believe that fitness should be accessible to everyone, regardless of their background or fitness level.</p>
+                <p>Our team consists of experienced fitness professionals, software developers, and designers who are committed to creating the best possible experience for our users.</p>
+                <p>We are constantly working on new features and improvements to help you reach your full potential. Thank you for choosing Fitness App!</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <div class="about-image">
+                <img src="https://images.pexels.com/photos/3863024/pexels-photo-3863024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Fitness Team">
             </div>
         </div>
-    </div>
+    </section>
+
+    <script>
+        document.querySelector('.burger').addEventListener('click', function(){
+            document.querySelector('.navbar').classList.toggle('active');
+        })
+    </script>
 </body>
 </html>
